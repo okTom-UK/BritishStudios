@@ -3,5 +3,6 @@ This Discord Rich presence was made for the vRP framework;
 - Active Players Online
 - Play Slot Count
 - Highly Customisable
+- Clean coded
 
 -- © British Studios 2021
