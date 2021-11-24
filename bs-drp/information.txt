@@ -1,0 +1,7 @@
+This Discord Rich presence was made for the vRP framework;
+- Incorperation of Perm ID's
+- Active Players Online
+- Play Slot Count
+- Highly Customisable
+
+-- © British Studios 2021
