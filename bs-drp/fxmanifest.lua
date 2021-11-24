@@ -2,7 +2,7 @@ fx_version 'cerulean'
 games {  'gta5' }
 
 author 'British Studios'
-description "Discord Rich Presence for vRP framework."
+description "British Studios - Discord Rich Presence for vRP framework."
 version "1.0.0"
 
 
