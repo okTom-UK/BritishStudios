@@ -43,7 +43,6 @@ You would change "nameofmap" to the name of the map.
 
 If you put a new map in create a new folder in the folder for example maps\nameofmap.
 
-
 5) bs-assetstemplate\data
 
 This is your car data folder, you can put car data here if you want to include all your
