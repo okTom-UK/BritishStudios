@@ -51,3 +51,5 @@ for example ``bs-bmwm4`` then put the data inside the folder. We have made the f
 every data file inside here anyway.
 
 Any issues please feel free to open a ticket within the British Studios Discord. :)
+
+-- © British Studios 2021
