@@ -1,8 +1,8 @@
+resource_manifest_version "44febabe-d386-4d18-afbe-5e627f4af937"
 fx_version 'cerulean'
 game 'gta5'
 author 'British Studios'
 description 'British Radio Stations edit by British Studios in collabartion with Trappy-UK'
--- Original Forum Post > https://forum.cfx.re/t/release-js-radio/52121
 version '1.0.0'
 
 supersede_radio "RADIO_12_REGGAE" { url = "http://simulatorradio.stream/stream", volume = 0.1, name = "Simulator Radio" }
