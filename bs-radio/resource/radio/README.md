@@ -1,4 +1,4 @@
-British Radio Station by British Studios in collabaration with Trappy-UK
+British Radio Station by British Studios in collabaration.
 
 Original Forum Post - https://forum.cfx.re/t/release-js-radio/52121
 
