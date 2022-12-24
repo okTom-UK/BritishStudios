@@ -4,4 +4,4 @@ This Github was made entirely for the purpose of uploading scripts and assets to
 
 All scripts can be edited and adjusted to suit your servers needs so long as the credit is given where due (that credit being British Studios).
 
--- © British Studios 2021
+-- © British Studios 2022
