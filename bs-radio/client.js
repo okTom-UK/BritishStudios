@@ -4,19 +4,30 @@ let index = -1;
 let volume = GetProfileSetting(306) / 10;
 let previousVolume = volume;
 
-SetRadioStationDisabled("RADIO_21_DLC_XM17", true);
-SetRadioStationDisabled("RADIO_22_DLC_BATTLE_MIX1_RADIO", true);
+SetRadioStationDisabled("RADIO_34_DLC_HEI4_KULT", true);
+SetRadioStationDisabled("RADIO_35_DLC_HEI4_MLR", true);
+SetRadioStationDisabled("RADIO_11_TALK_02", true);
+SetRadioStationDisabled("RADIO_35_DLC_HEI4_MLR", true);
+SetRadioStationDisabled("RADIO_16_SILVERLAKE", true);
+SetRadioStationDisabled("RADIO_34_DLC_HEI4_KULT", true);
+SetRadioStationDisabled("RADIO_18_90S_ROCK", true);
+SetRadioStationDisabled("RADIO_23_DLC_XM19_RADIO", true);
+SetRadioStationDisabled("RADIO_01_CLASS_ROCK", true);
+SetRadioStationDisabled("RADIO_06_COUNTRY", true);
+SetRadioStationDisabled("RADIO_08_MEXICAN", true);
+SetRadioStationDisabled("RADIO_37_MOTOMAMI", true);
+SetRadioStationDisabled("RADIO_36_AUDIOPLAYER", true);
 
-for (let i = 0, length = GetNumResourceMetadata("radio", "supersede_radio"); i < length; i++) {
-    const radio = GetResourceMetadata("radio", "supersede_radio", i);
+for (let i = 0, length = GetNumResourceMetadata("bs-radio", "supersede_radio"); i < length; i++) {
+    const radio = GetResourceMetadata("bs-radio", "supersede_radio", i);
 
     if (!availableRadios.includes(radio)) {
-        console.error(`radio: ${radio} is an invalid radio.`);
+        console.error(`bs-radio: ${radio} is an invalid radio.`);
         continue;
     }
 
     try {
-        const data = JSON.parse(GetResourceMetadata("radio", "supersede_radio_extra", i));
+        const data = JSON.parse(GetResourceMetadata("bs-radio", "supersede_radio_extra", i));
         if (data !== null) {
             customRadios.push({
                 "isPlaying": false,
@@ -27,19 +38,18 @@ for (let i = 0, length = GetNumResourceMetadata("radio", "supersede_radio"); i <
                 AddTextEntry(radio, data.name);
             }
         } else {
-            console.error(`radio: Missing data for ${radio}.`);
+            console.error(`bs-radio: Missing data for ${radio}.`);
         }
     } catch (e) {
         console.error(e);
     }
 }
 
-RegisterNuiCallbackType("radio:ready");
-on("__cfx_nui:radio:ready", (data, cb) => {
+RegisterNuiCallbackType("bs-radio:ready");
+on("__cfx_nui:bs-radio:ready", (data, cb) => {
     SendNuiMessage(JSON.stringify({ "type": "create", "radios": customRadios, "volume": volume }));
     previousVolume = -1;
 });
-SendNuiMessage(JSON.stringify({ "type": "create", "radios": customRadios, "volume": volume }));
 
 const PlayCustomRadio = (radio) => {
     isPlaying = true;

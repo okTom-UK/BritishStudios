@@ -4,12 +4,6 @@
     <script>
         let customRadios;
 
-        /**
-         * Radio class containing the state of our stations.
-         * Includes all methods for playing, stopping, etc.
-         * @param {Array} stations Array of objects with station details.
-         * @param {number} volume Number from 0.0 to 1.0
-         */
         const Radio = function (stations, volume) {
             let self = this;
 
@@ -84,7 +78,7 @@
         };
 
         document.addEventListener("DOMContentLoaded", () => {
-            fetch("https://radio/radio:ready", { "method": "POST", "body": "{}" });
+            fetch("https://bs-radio/bs-radio:ready", { "method": "POST", "body": "{}" });
 
             window.addEventListener("message", (event) => {
                 let item = event.data;
@@ -110,7 +104,7 @@
                                 customRadios.play(index);
                             }
                         } else {
-                            fetch("https://radio/radio:ready", { "method": "POST", "body": "{}" });
+                            fetch("https://bs-radio/bs-radio:ready", { "method": "POST", "body": "{}" });
                         }
                         break;
                     case "stop":
