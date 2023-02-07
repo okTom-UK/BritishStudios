@@ -1,7 +1,7 @@
-# BritishStudios
+# British Studios Github
 
-This Github was made entirely for the purpose of uploading scripts and assets to be used by the general public. Contained in this folder are assets made by the British Studios Development Team and had no external input unless otherwise stated so.
+This Github repository was created for the purpose of providing scripts and assets to the public. The contents of this repository are exclusively produced by the British Studios Development Team, with the exception of any explicitly credited contributions.
 
-All scripts can be edited and adjusted to suit your servers needs so long as the credit is given where due (that credit being British Studios).
+Scripts within this repository are available for editing and customization to meet the needs of your server, provided that proper credit is given to British Studios.
 
--- © British Studios 2022
+-- Copyright British Studios 2022
