@@ -4,4 +4,4 @@ This Github repository was created for the purpose of providing scripts and asse
 
 Scripts within this repository are available for editing and customization to meet the needs of your server, provided that proper credit is given to British Studios.
 
--- Copyright British Studios 2022
+-- Copyright British Studios 2023
